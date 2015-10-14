@@ -1,1 +1,3 @@
-# This module can deploy and configure lsyncd daemon
+# puppet-lsyncd
+
+in development... :)
