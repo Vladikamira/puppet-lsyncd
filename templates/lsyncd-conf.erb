@@ -1,0 +1,14 @@
+-- ************************************
+-- Conf template in module vladikamira-lsyncd
+-- Managed by Puppet
+-- ************************************
+
+settings  {
+   logfile = "<%= @logfile %>",
+   statusFile = "<%= @statusfile %>",
+   statusInterval = <%= @statusinterval %>,
+   nodaemon = <%= @nodaemon %>,
+   maxDelays = <%= @maxdelays %>,
+   maxProcesses = <%= @maxprocesses %>,
+   insist = <%= @insist %>
+}

@@ -1,0 +1,25 @@
+
+sync {
+
+   <%= @synctype %>,
+   source	= "<%= @source %>",
+   host		= "<%= @host %>",
+   targetdir	= "<%= @targetdir %>",
+   delay	= <%= @delay %>,
+<% if @exclude and !@exclude.empty? -%>
+   exclude = {
+     <% @exclude.each do |dir| -%>
+       "<%= dir %>",
+     <% end -%>
+   },
+<% end -%>
+
+<% if @rsync and !@rsync.empty? -%>
+   rsync = {
+     <%- @rsync.sort.each do |key,value| -%>
+       <%= key -%> = <%= value  %> , 
+     <%- end -%>
+   }
+<% end -%>
+
+}
