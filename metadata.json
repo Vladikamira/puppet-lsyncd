@@ -1,0 +1,35 @@
+{
+  "name": "vladikamira-lsyncd",
+  "version": "0.0.1",
+  "author": "Anton Kurennoy",
+  "license": "Apache-2.0",
+  "summary": "Lsyncd module",
+  "source": "https://github.com/Vladikamira/puppet-lsyncd",
+  "project_page": "",
+  "issues_url": "https://github.com/Vladikamira/puppet-lsyncd/issues",
+  "tags": ["lsyncd", "rsync"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem": "RedHat",
+    "operatingsystemrelease": [ "6" ]
+    },
+    {
+    "operatingsystem": "CentOS",
+    "operatingsystemrelease": [ "6" ]
+    }
+  ],
+  "requirements": [
+    {
+    "name": "pe",
+    "version_requirement": "3.x"
+    },
+    {
+    "name": "puppet",
+    "version_requirement": ">=2.7.20 <4.0.0"
+    }
+  ],
+  "dependencies": 
+  [
+    {"name":"puppetlabs/concat","version_requirement":">= 1.1.1 < 2.0.0"}
+  ]
+}
